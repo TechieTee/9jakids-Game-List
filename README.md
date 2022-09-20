@@ -1,6 +1,8 @@
 # Getting Started with Create React App
-[DeployedAppDemoView] (https://naijakids-game-list.netlify.app)
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DeployedAppDemoView](https://naijakids-game-list.netlify.app)
+
+
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
