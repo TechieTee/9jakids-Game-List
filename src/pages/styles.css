@@ -1,0 +1,284 @@
+body {
+  background: #fff;
+}
+/* TOP NAV */
+.TopNavigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #fdc802;
+  color: black;
+}
+/* NAV */
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #f0f4f9;
+  color: black;
+  margin: 15px 0;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: #2642af;
+}
+
+@media screen and (max-width: 550px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+/* BANNER */
+.Banner {
+}
+.BannerContent {
+  background-image: url("https://raw.githubusercontent.com/9ijakidArchitect/Practicetasks/main/Top%20Banner.png");
+  background-size: cover;
+  height: 50vh;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.BannerTextContent {
+  padding: 30px 0 0 300px;
+  font-size: 22px;
+}
+.BannerImg {
+  height: 100%;
+  width: 100%;
+}
+.Banner img {
+  height: 100%;
+  width: 100%;
+}
+
+/* GRID */
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0px 17%;
+  justify-items: center;
+}
+/* CARD */
+.Cardd {
+  margin: 10px 0;
+
+  background: rgb(255, 255, 255);
+  color: rgb(55, 65, 81);
+  border: 0.1px solid grey;
+  width: 16rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+    var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+  text-align: left;
+}
+.Cardd:hover {
+  scale: 1.08;
+  transition: all 0.5s ease-in-out;
+}
+.Cardd .details {
+  padding: 0px 10px 0px;
+}
+
+.Cardd .img {
+  height: 150px;
+}
+
+.Cardd .img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.Games {
+  text-align: center;
+  font-size: 32px;
+}
+/* NEWSLETTER */
+.Newsletter {
+  margin: 50px 0;
+}
+.NewsletterContent {
+  background-image: url("https://raw.githubusercontent.com/9ijakidArchitect/Practicetasks/main/Newsletter.png");
+  background-size: cover;
+  height: 50vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+.NewsletterTextContent {
+  padding: 20px 30% 0px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.NewsletterImg {
+  height: 100%;
+  width: 100%;
+}
+.Newsletter img {
+  height: 100%;
+  width: 100%;
+}
+/* FOOTER */
+.Footer {
+}
+.FooterContent {
+  background: rgb(9, 19, 42);
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0px 15%;
+  justify-items: center;
+}
+.FooterTextContent {
+  padding: 60px 0 0 25px;
+  font-size: 22px;
+  color: rgb(209, 201, 201);
+  font-size: 16px;
+  font-weight: bold;
+}
+.FooterTextContent2 {
+  font-size: 22px;
+  color: rgb(209, 201, 201);
+  font-size: 16px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  justify-items: center;
+}
+/* BUTTON */
+.buttonFlip {
+  transition: all 0.4s ease-in;
+  background-color: #fdc802;
+  color: #000;
+  border: 1px solid #fdc802;
+  width: 120px;
+  outline: none;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 6px 10px;
+  margin-bottom: 1rem;
+  margin: 0 12px 0 0;
+  transform: translateY(4px);
+}
+.button {
+  transition: all 0.4s ease-in;
+  border: 1px solid #fdc802;
+  background: white;
+  color: #000;
+  width: 120px;
+  outline: none;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 6px 10px;
+  margin: 0 12px 0 0;
+  margin-bottom: 1rem;
+}
+/* SEARCH */
+.SearchWrapper{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0px 14% 0 20%;
+  justify-items: center;
+  height: 15vh;
+}
+input {
+  background: rgb(209, 213, 219);
+  color: rgb(55, 65, 81);
+border-radius: 5px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem 0.625rem;
+}
